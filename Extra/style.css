@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins';
+    font-weight: 500;
+font-size: 14px;
+}
+#header{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f8dfd1;
+    /* position: fixed; */
+    width: 100%;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo-nav{
+    display: flex;
+    gap: 20px;
+    
+
+}
+ul{
+    display: flex;
+    gap: 20px;
+    
+}
+li{
+    list-style-type: none;
+    margin-top: 20px;
+    
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.logo img{
+    height: 58px;
+    margin-left: 30px;
+}
+.search-btn1 input{
+    background-color: #f8dfd1;
+    border: 1px solid #f8dfd1;
+    border-bottom: 1px solid gray;
+}
+.search-btn ::placeholder{
+    color: black;
+}
+
+.search-btn{
+    display: flex;
+    gap: 30px;
+
+}
+
+
+/* .search-btn1 i {
+    position: absolute;
+    right: 10px;
+    top: 30%;  
+    transform: translateY(-50%); 
+    color: #888;
+} */
+.search-btn1 {
+    position: relative;
+    display: flex;
+    align-items: center; 
+    border-radius: 5px;
+}
+
+
+
+.search-btn1 i {
+    position: absolute;
+    cursor: pointer;
+}
+
+
+.my-account-grid{
+    display: flex;
+    gap: 20px;
+}
+
+.my-account-grid a{
+    padding-top: 12px;
+}
+.my-account-grid img{
+    height: 30px;
+    margin-top: 8px;
+
+}
+
+/* .........................home........................ */
+#home{
+    background-image: url('h1_hero.png.webp');
+    background-size: cover;
+    height: 600px;
+
+    justify-content: center;
+    
+}
+.info{
+    background-color: white;
+    width: 400px;
+
+    height: 350px;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 20%;
+    padding: 10px;
+
+
+}
+.info h1{
+    font-size: 50px;
+    font-weight:bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+    margin-left: 30px;
+    
+    margin-top: 10px;
+
+}
+.info-h-span2{
+    display: block;
+}
+.p1{
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(113, 111, 111);
+    font-weight: 600;
+
+}
+.p2{
+    margin-top: 10px;
+    color: gray;
+    margin-left: 30px;
+    line-height: 1.6em;
+    /* font-size: 18px; */
+    
+
+}
+.p2-span{
+    display: block;
+}
+.info button{
+    margin-top: 20px;
+    margin-left: 32px;
+    background-color: #ec9255;
+    border: 1px solid orange;
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+
+}
+.info button:hover{
+    background-color: orange;
+    color: black;
+}
+.info button:active{
+    background-color: green;
+    color: black;
+}
+.search-btn1 {
+    position: relative;
+}
+
+.search-btn1 input {
+    width: 250px;
+    height: 25px;
+}
+
+.search-btn1 i {
+    position: absolute;
+    right: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+
+/* .........................product............................... */
+#Product{
+    padding: 80px;
+    
+}
+#Product h1{
+    text-align: center;
+    font-size: 30px;
+}
+#Product p{
+    text-align: center;
+    margin-top: 20px;
+    /* font-size: 18px; */
+
+}
+.product-main-p{
+    color:grey;
+}
+
+.Product-flex2{
+    display: grid;
+    grid-template-columns: repeat(3,33.3%);
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.Product-flex1{
+    /* border-bottom: 1px solid lightgrey; */
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 40px;
+    
+
+}
+.Product-flex1 ul{
+    margin-bottom: 20px;
+
+}
+.grey-line{
+    border: 1px solid gainsboro;
+    background-color: gainsboro;
+}
+.horizontal-line{
+    
+    border: 1px solid orange;
+    width:5%;
+    margin-left:360px;
+
+}
+
+/* .....................About................................... */
+
+#About{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin-top: 40px;
+    
+}
+.About-img img{
+    height: 100%;
+    width: 100%;
+} 
+
+.About-info{
+    background-color: #fbe3d6;
+    padding: 40px;
+}
+
+.About-info h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    margin-top: 90px;
+
+}
+
+.About-info-p1{
+   padding-top: 30px;
+    /* font-size: 18px; */
+}
+.About-info-p2{
+    padding-top: 5px;
+    /* font-size: 18px; */
+
+}
+
+.About-info button{
+    background-color: #f5942d;
+    border: 1px solid orange;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+.About-info button:hover{
+    background-color: orange;
+    color: black;
+}
+.About-info button:active{
+    background-color: green;
+    color: black;
+}
+/* .......................page............................ */
+#page{
+    padding: 80px;
+}
+
+#page h1{
+    text-align: center;
+    font-size: 30px;
+}
+#page p{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.page-cards{
+    display: grid;
+    grid-template-columns: repeat(3,33.3%);
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.page-span{
+    display: block;
+    padding-top: 5px;
+
+}
+.page-p{
+    color: grey;
+}
+.page-card1 img,.page-card2 img,.page-card3 img{
+    height: 100%;
+    width: 100%;
+}
+
+#page button{
+    background-color: white;
+    border: 1px solid orange;
+    padding: 10px;
+    margin-top: 10%;
+    width: 200px;
+    color: #f5942d;
+    cursor: pointer;
+
+}
+#page button:hover{
+    background-color: orange;
+    color: black;
+}
+#page button:active{
+    background-color: green;
+    color: black;
+}
+.page-button{
+    display: flex;
+    justify-content: center;
+}
+/* ......................................................... */
+.cards-grid{
+    display: grid;
+    grid-template-columns: repeat(3,33.3%);
+    padding: 20px;
+
+}
+
+.cards-grid2 img,.cards-grid3 img{
+   
+    height: 100%;
+    width: 100%;
+}
+
+.cards-grid1{
+    padding: 30px;
+    text-align: left;
+}
+
+
+.cards-grid1 img{
+    height: 50px;
+}
+.cards-grid1 h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    margin-top: 20px;
+    font-weight: 800;
+}
+.cards-grid1 p{
+    color: gray;
+    margin-top: 20px;
+    
+}
+.cards-grid1 button{
+
+    border: 1px solid orange;
+    padding: 10px;
+    margin-top: 20px;
+    width: 200px;
+    color: #f5942d;
+    background-color: white;
+    cursor: pointer;
+}
+.cards-grid1 button:hover{
+    background-color: orange;
+    color: black;
+}
+.cards-grid1 button:active{
+    background-color: green;
+    color: black;
+}
+/* ......................................................... */
+#top-pick{
+    padding: 80px;
+    text-align: center;
+
+}
+
+#top-pick h1{
+    /* text-align: center; */
+    font-size: 30px;
+}
+#top-pick p{
+    text-align: center;
+}
+.p{
+    color: gray;
+
+}
+
+.top-pick-cards{
+    display: grid;
+    grid-template-columns: repeat(3,33.3%);
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+
+#top-pick button{
+    background-color: white;
+    border: 1px solid orange;
+    padding: 10px;
+    margin-top: 50px;
+    width: 200px;
+    color: #f5942d;
+    cursor: pointer;
+}
+#top-pick button:hover{
+    background-color: orange;
+    color: black;
+}
+#top-pick button:active{
+    background-color: green;
+    color: black;
+}
+
+.top-pick-button{
+    display: flex;
+    justify-content: center;
+}
+/* ..................................blog...................... */
+#blog{
+    background-color: #f8dfd1;
+    padding: 80px 70px 80px 70px;
+
+}
+.blog-grid{
+    
+    display: flex;
+    justify-content: center;
+
+}
+.blog1{
+    margin-left: 90px;
+}
+.blog1 h4{
+padding: 10px 0 10px 0;
+}
+.blog-p2{
+    color: grey;
+    margin-top: 10px;
+}
+.blog-p{
+    color: black;
+    margin-top: 10px;
+    font-size: 16px;
+}
+/* .................footer.................................... */
+#Contact{
+    background-color: #1f234a;
+    color: white;
+    padding: 90px;
+    display: flex;
+justify-content: center;  
+}
+
+.footer-div{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px; 
+    max-width: 1200px; 
+    margin-left: 80px;
+}
+
+
+
+ .twitter-logo,.facebook-logo{
+    margin-top: 40px;
+    border: 2px solid white;
+    border-radius: 80px;
+    padding: 5px;
+    cursor: pointer;
+
+
+ }
+
+ .p-logo{
+    height: 40px;
+    margin-top: 15px;
+    cursor: pointer;
+ }
+
+.footer-div1 p,.footer-div2-p,.footer-div3-p,.footer-div4-p{
+padding-top: 20px;
+font-size: 12px;
+}
+
+
+.img{
+    height: 40px;
+}
+
+.last-para{
+    text-align: center;
+    background-color: #1f234a;
+    color: white;
+    padding-bottom: 30px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .info h1 {
+        font-size: 40px;
+    }
+    .Product-flex2, .page-cards, .top-pick-cards {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .info h1 {
+        font-size: 32px;
+    }
+    .Product-flex2, .page-cards, .top-pick-cards {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+/* Media Queries for Mobile */
+@media screen and (max-width: 480px) {
+    .info {
+        padding: 15px;
+    }
+    .info h1 {
+        font-size: 24px;
+    }
+    .search-btn1 input {
+        width: 100%;
+    }
+    .Product-flex2, .page-cards, .top-pick-cards {
+        grid-template-columns: 1fr;
+    }
+    .footer-div {
+        grid-template-columns: 1fr;
+    }
+}
+
+
